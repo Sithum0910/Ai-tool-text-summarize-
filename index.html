@@ -3,18 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Summarizer</title>
+    <title>AI Text Summarizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-dark text-light">
-    <div class="container text-center py-5">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Text Summarizer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/Sithum0910" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container text-center py-5 mt-5">
         <h1 class="display-4 mb-4">AI Text Summarizer</h1>
-        <textarea id="inputText" class="form-control" rows="5" placeholder="Enter your text here..."></textarea>
+        <p class="lead mb-4">Enter the text and get the summary instantly!</p>
+        <textarea id="inputText" class="form-control mb-4" rows="6" placeholder="Enter your text here..."></textarea>
         <button id="summarizeButton" class="btn btn-primary btn-lg mt-4">Summarize</button>
 
         <h2 class="mt-5">Summary:</h2>
-        <p id="summaryText" class="lead"></p>
+        <p id="summaryText" class="lead bg-secondary p-4 rounded"></p>
+
+        <footer class="mt-5">
+            <p>Developed by <a href="https://github.com/Sithum0910" target="_blank" class="text-primary">Sithum Kaushalya</a></p>
+        </footer>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
